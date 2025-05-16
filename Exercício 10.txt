@@ -1,0 +1,21 @@
+#include <iostream>
+#include <locale>
+//Faça um programa que recebe um valor do usuário e calcula 12% desse total.
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float valor, R, div;
+
+    cout << "Digite um valor:" << endl;
+    cin>> valor;
+
+    div = 12.0 / 100;
+    R = div * valor;
+
+    cout << "12% corresponde a:" << R << " do valor digitado."<< endl;
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+#include <locale>
+//Faça um Programa que solicite as 4 notas bimestrais de um aluno e mostre sua média na tela.
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+   int n1,n2,n3,n4, media;
+
+   cout <<"Digite as quatros notas bimestrais"<< endl;
+   cin >> n1>>n2>>n3>>n4;
+
+   media = (n1+n2+n3+n4) /4;
+   cout <<"A media final é:" << media<< endl;
+
+    return 0;
+}

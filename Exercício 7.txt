@@ -1,0 +1,20 @@
+#include <iostream>
+#include <locale>
+//Faça um programa que calcula a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+using namespace std;
+
+int main()
+{
+    setlocale (LC_ALL, "Portuguese");
+    int lado, area, dobro;
+
+    cout << "Digite o tamanho do lado do quadrado:" << endl;
+    cin >> lado;
+
+    area = lado * lado;
+    dobro = area * 2;
+
+    cout << "O dobro da area desse quadrado é:" << dobro<< "cm"<< "... cujo sua area é " << area<< "cm." <<endl;
+
+    return 0;
+}

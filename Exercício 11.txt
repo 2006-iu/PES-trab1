@@ -1,0 +1,27 @@
+#include <iostream>
+#include <locale>
+//Crie um software que recebe o valor do seu salário e calcula os 7% do imposto de renda.
+//A saída do seu programa deve ser o salário bruto (sem abatimento), o tanto de imposto que vai pagar
+// e o seu salário líquido (após descontar o IR).
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float salario, imposto, salario_L, div;
+
+    cout << "Digite o valor do seu salário" << endl;
+    cin>> salario;
+
+    div = 7.0 / 100;
+    imposto = div * salario;
+    salario_L= salario - imposto;
+
+    cout << "Seu salário bruto é: R$" <<salario << endl;
+    cout << "Total de imposto a ser pago: R$" << imposto << endl;
+    cout << "Seu salário líquido: R$" << salario_L << endl;
+
+    return 0;
+}

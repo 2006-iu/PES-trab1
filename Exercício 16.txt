@@ -1,0 +1,27 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float nota1, nota2, media_f;
+
+    cout << "Digite suas duas notas:" <<endl;
+    cin >> nota1>> nota2;
+
+    media_f = (nota1 + nota2) / 2;
+
+    if (media_f == 10){
+        cout << "O aluno foi aprovado com distinção!!" << endl;
+    }
+    else if ( media_f > 7) {
+        cout << "O aluno está aprovado!!!" << endl;
+    }
+    else {
+        cout << "O aluno está reprovado!!"<< endl;
+
+    }
+    return 0;
+}

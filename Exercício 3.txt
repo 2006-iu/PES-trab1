@@ -1,0 +1,19 @@
+#include <iostream>
+#include <locale>
+//Faça um Programa que solicite dois números e imprima na tela a soma dos números.
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int n1, n2, soma;
+
+    cout << "Digite dois numeros" << endl;
+    cin >> n1>>n2;
+
+    soma= n1+ n2;
+    cout << "A soma dos dois numeros é:" << soma << endl;
+
+    return 0;
+}

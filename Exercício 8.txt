@@ -1,0 +1,23 @@
+#include <iostream>
+#include <locale>
+// Faça um Programa que pergunta quanto você ganha por hora e o número de horas trabalhadas no mês.
+//Calcule e mostre o total do seu salário no referido mês.
+
+using namespace std;
+
+int main()
+{
+    setlocale (LC_ALL, "Portuguese");
+    int r_hora, horas_trab, salario;
+
+    cout << "Qual valor voce recebe por horas trabalhadas"<< endl;
+    cin>> r_hora;
+    cout <<"Quandas horas voce trabalha no mes?:"<< endl;
+    cin>> horas_trab;
+
+    salario= r_hora * horas_trab;
+
+    cout <<"Seu salario é: "<< salario<< " reais mensais" << endl;
+
+        return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+//Faça um Programa que solicite um número ao usuário e então mostre a mensagem: O número informado foi [número].
+using namespace std;
+
+int main()
+{
+  int numero;
+
+  cout<< "iforme um numero:" <<endl;
+  cin>> numero;
+
+  cout << "O numero inoformado foi:" << numero<< endl;
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <locale>
+//Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int n1;
+
+    cout<<  "Digite um  numero:"<< endl;
+    cin>>n1;
+
+    if (n1 > 0){
+        cout<< "O numero é positivo." << endl;
+    }
+    else if (n1 < 0)
+    {
+        cout<< "O numero é negativo. "<< endl;
+    }
+    else if (n1 == 0)
+    {
+        cout << "O numero é 0."<< endl;
+    }
+
+    return 0;
+}

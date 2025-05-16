@@ -1,0 +1,20 @@
+#include <iostream>
+#include <locale>
+//Faça um programa que calcula 12% de 2112.
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float R, div;
+
+    cout << "O resultado da conta de 12% de 2112, é: " <<endl;
+
+    div = 12.0 / 100;
+    R = div * 2112;
+
+    cout << "R:" << R << endl;
+
+    return 0;
+}

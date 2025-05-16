@@ -1,0 +1,23 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int n1,n2;
+
+    cout<<  "Digite dois numeros:"<< endl;
+    cin>>n1>>n2;
+
+    if (n1>n2){
+        cout<< "O maior numero é: " << n1<< endl;
+    }
+    else
+    {
+        cout<< "O maior numero é: "<< n2<< endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+#include <locale>
+
+//Faça um Programa que solicite uma distância em metros e a converta para centímetros.
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float cm, m;
+
+    cout<< "Digite a distância em metros:" << endl;
+    cin>>m;
+
+    cm = m * 100;
+
+    cout<< "A distância convertida para centímetro é:" <<cm<< "cm"<< endl;
+
+    return 0;
+}
